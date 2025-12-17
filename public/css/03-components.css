@@ -1,0 +1,198 @@
+/* Components */
+
+/* Navbar */
+.nav-right {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.nav-right a {
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-accent);
+  transition: background-color 0.2s;
+}
+
+.nav-right a:hover {
+  background-color: var(--color-border-light);
+}
+
+/* Buttons */
+button, .btn {
+  background-color: var(--color-bg-light);
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-lg);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  transition: background-color 0.2s, border-color 0.2s;
+  box-shadow: var(--shadow-sm);
+}
+
+button:hover, .btn:hover {
+  background-color: var(--color-border-light);
+  border-color: var(--color-primary);
+}
+
+button[type="submit"] {
+  background-color: var(--color-primary);
+  color: var(--color-bg-light);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* Forms */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: var(--spacing-md);
+  margin: var(--spacing-xs) 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-lg);
+  font-size: var(--font-size-base);
+  background-color: var(--color-bg-light);
+  box-shadow: var(--shadow-sm);
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(232, 165, 193, 0.1);
+}
+
+/* Cards */
+.card {
+  background-color: var(--color-bg-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-lg);
+  margin: var(--spacing-md) 0;
+  box-shadow: var(--shadow-md);
+}
+
+/* Lists */
+ul {
+  list-style: none;
+}
+
+li {
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Headings */
+h1, h2, h3 {
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: var(--font-weight-bold);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--font-weight-semibold);
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Links */
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Auth content */
+.auth-content {
+  padding: var(--spacing-xxl) var(--spacing-lg);
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--color-bg-light);
+  min-height: 100vh;
+  border-radius: var(--border-radius-xl);
+  box-shadow: var(--shadow-md);
+}
+
+/* Messages */
+.message {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+/* Danger zone */
+.card.danger {
+  border-color: var(--color-warning);
+  background-color: #fef2f2;
+}
+
+.delete-btn {
+  background-color: var(--color-error);
+  color: var(--color-bg-light);
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-right {
+    gap: var(--spacing-xs);
+  }
+
+  .nav-right a {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 13px;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .auth-content {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}

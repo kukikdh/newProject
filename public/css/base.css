@@ -1,0 +1,56 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Fonts */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  color: #5d4e5d;
+  background-color: #fdf7f7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #5d4e5d;
+  font-weight: 600;
+}
+
+a {
+  color: #e8a5c1;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d4a5c7;
+  text-decoration: underline;
+}

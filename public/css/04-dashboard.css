@@ -1,0 +1,84 @@
+/* Dashboard Page */
+
+/* Welcome */
+.welcome {
+  margin-bottom: var(--spacing-xl);
+}
+
+.welcome p {
+  font-size: 18px;
+  color: var(--color-accent);
+}
+
+/* Dashboard Wrapper */
+.dashboard-wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stats-grid .card p {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  margin: var(--spacing-xs) 0 0 0;
+  color: var(--color-primary);
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-xl);
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li {
+  padding: var(--spacing-xs) 0;
+  border-bottom: 1px solid var(--color-border-light);
+  font-size: var(--font-size-base);
+}
+
+.task-list li:last-child {
+  border-bottom: none;
+}
+
+/* Muted Text */
+.muted {
+  font-size: 14px;
+  color: var(--color-accent);
+  margin-top: var(--spacing-xs);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-wrapper {
+    padding: var(--spacing-md);
+  }
+}
