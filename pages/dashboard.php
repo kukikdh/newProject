@@ -134,6 +134,11 @@
     </div>
 </div>
 
+<!--yo footer ko-->
+  <footer>
+    <h2>StudyNote</h2>
+    <p>&copy; 2025 StudyNote. All rights reserved.</p>
+  </footer>
 <!-- JS connection -->
 <script src="../public/js/script.js"></script>
 <script>
@@ -164,24 +169,4 @@ new Chart(ctx, {
             }
         }
     }
-});
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});</script>

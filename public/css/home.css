@@ -1,0 +1,186 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background: #f6f3fc;
+        color: #2d2d2d;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.2rem 10%;
+        background: white;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        color: #e8a5c1;
+        font-weight: bold;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    nav ul li {
+        font-size: 0.95rem;
+        font-weight: 500;
+    }
+
+    .btn-login {
+        padding: 0.5rem 1rem;
+        background: #e8a5c1;
+        color: white;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        transition: 0.3s;
+    }
+
+    .btn-login:hover {
+        background: #5847c3;
+    }
+
+    .home {
+        text-align: center;
+        padding: 4rem 10%;
+        background: linear-gradient(rgba(106, 90, 205, 0.1), rgba(106, 90, 205, 0.05));
+    }
+
+    .home h2 {
+        font-size: 2rem;
+        color: #2d2d2d;
+    }
+
+    .home p {
+        margin: 1rem 0 2rem;
+        color: #555;
+        font-size: 1rem;
+    }
+
+    .btn-cta {
+        padding: 0.75rem 1.5rem;
+        background: #e8a5c1;
+        color: white;
+        font-size: 1rem;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn-cta:hover {
+        background: #5847c3;
+    }
+
+    .features {
+        padding: 3rem 10%;
+        text-align: center;
+    }
+
+    .features h3 {
+        margin-bottom: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .feature-boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .feature {
+        flex: 1;
+        min-width: 200px;
+        background: white;
+        padding: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+        transition: 0.3s;
+    }
+
+    .feature:hover {
+        transform: translateY(-5px);
+    }
+
+    .faq {
+        padding: 3rem 10%;
+        background: #fff;
+    }
+
+    .faq h3 {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .faq-item {
+        background: #f9f7ff;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .faq-question {
+        font-weight: bold;
+    }
+
+    .faq-answer {
+        display: none;
+        margin-top: 0.5rem;
+        color: #555;
+    }
+
+    .newsletter {
+        text-align: center;
+        padding: 2rem 10%;
+        background: linear-gradient(rgba(106, 90, 205, 0.1), rgba(106, 90, 205, 0.05));
+    }
+
+    .newsletter input {
+        padding: 0.5rem;
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        outline: none;
+        margin-right: 0.5rem;
+    }
+
+    .newsletter button {
+        padding: 0.5rem 1rem;
+        background: #e8a5c1;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    footer {
+        padding: 2rem 10%;
+        background: #2d2d2d;
+        color: #ddd;
+        text-align: center;
+    }
+
+    footer p {
+        margin-top: 0.5rem;
+        font-size: 0.9rem;
+    }
