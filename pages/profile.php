@@ -23,7 +23,7 @@ if (!$user) {
 }
 ?>
 
-<link rel="stylesheet" href="../public/css/04-profile.css" />
+<link rel="stylesheet" href="../public/css/4-profile.css" />
 
 <div class="main-content">
   <h2>Profile</h2>

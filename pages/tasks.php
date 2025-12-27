@@ -1,6 +1,6 @@
 <?php include('../includes/header.php'); ?>
 
-<link rel="stylesheet" href="../public/css/04-tasks.css" />
+<link rel="stylesheet" href="../public/css/4-tasks.css" />
 
 <div class="main-content">
   <div class="tasks-container">
@@ -29,7 +29,7 @@
       </form>
     </div>
 
-    <!-- Your Tasks Card -->
+    <!-- Tasks Card -->
     <div class="card">
       <h2>Your Tasks</h2>
       <div class="tasks-list">

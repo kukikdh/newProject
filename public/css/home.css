@@ -6,7 +6,10 @@
     }
 
     body {
-        background: #f6f3fc;
+        background-image: url('../images/1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         color: #2d2d2d;
         line-height: 1.6;
     }
@@ -61,7 +64,10 @@
     .home {
         text-align: center;
         padding: 4rem 10%;
-        background: linear-gradient(rgba(106, 90, 205, 0.1), rgba(106, 90, 205, 0.05));
+        background-image: url('../images/1.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .home h2 {

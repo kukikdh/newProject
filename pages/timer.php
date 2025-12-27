@@ -1,6 +1,6 @@
 <?php include('../includes/header.php'); ?>
 
-<link rel="stylesheet" href="../public/css/04-timer.css" />
+<link rel="stylesheet" href="../public/css/4-timer.css" />
 
 <div class="main-content">
   <h2>Focus Timer</h2>

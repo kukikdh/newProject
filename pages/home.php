@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,26 +29,26 @@
 
   <!-- Features -->
   <section class="features" id="features">
-    <h3>Features ✨</h3>
+    <h3>Features </h3>
     <div class="feature-boxes">
       <div class="feature">
-        <h4>📁 File Sorter</h4>
+        <h4>File Sorter</h4>
         <p>Keep all your study files neatly organized.</p>
       </div>
       <div class="feature">
-        <h4>📝 Note Builder</h4>
+        <h4>Note Builder</h4>
         <p>Create, edit, and format study notes with ease.</p>
       </div>
       <div class="feature">
-        <h4>📊 Progress Tracker</h4>
+        <h4> Progress Tracker</h4>
         <p>Track your learning goals and achievements.</p>
       </div>
     </div>
   </section>
 
-  <!-- further answesr and question -->
+  <!-- further answer and question -->
   <section class="faq" id="faq">
-    <h3>Frequently Asked Questions ❓</h3>
+    <h3>Frequently Asked Questions ?</h3>
     <div class="faq-item">
       <div class="faq-question">Is StudyNote free to use?</div>
       <div id="child1" class="faq-answer">Yes! StudyNote is completely free for students to use.</div>
@@ -72,12 +71,6 @@
       <button type="submit">Subscribe</button>
     </form>
   </section>
-<!--yo footer ko-->
-  <footer>
-    <h2>StudyNote</h2>
-    <p>&copy; 2025 StudyNote. All rights reserved.</p>
-  </footer>
-</body>
 
 <script>
     // Smooth Scroll for nav links
@@ -121,7 +114,8 @@
 
     //   document.getElementById('child1').style.display = 'block'
     // }
-
-
 </script>
 </html>
+<?php 
+ include('../includes/footer.php');
+?>

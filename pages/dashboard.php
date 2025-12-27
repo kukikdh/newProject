@@ -1,6 +1,6 @@
 <?php include('../includes/header.php'); ?>
 
-<link rel="stylesheet" href="../public/css/04-dashboard.css" />
+<link rel="stylesheet" href="../public/css/4-dashboard.css" />
 
 <!-- Chart.js CDN for graphs -->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -69,6 +69,13 @@
     $bestDay = $weekDays[array_search(max($weekData), $weekData)];
     ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
     <!-- KPI Cards -->
     <div class="stats-grid">
         <div class="card">
@@ -76,19 +83,18 @@
             <p><?php echo $focusHours; ?>h <?php echo $focusMins; ?>m</p>
         </div>
         <div class="card">
-            <h3>Pending Tasks ✅</h3>
+            <h3>Pending Tasks </h3>
             <p><?php echo $pendingTasks; ?></p>
         </div>
         <div class="card">
-            <h3>Completed (Week) 📅</h3>
+            <h3>Completed (Week) </h3>
             <p><?php echo $completedWeek; ?></p>
         </div>
         <div class="card">
-            <h3>Next Due ⏳</h3>
+            <h3>Next Due </h3>
             <p><?php echo htmlspecialchars(substr($nextDue, 0, 20)); ?></p>
         </div>
     </div>
-
     <!-- Dashboard Grid -->
     <div class="dashboard-grid">
         <!-- Left Column -->
@@ -120,13 +126,13 @@
             <!-- Quick Actions -->
             <div class="card">
                 <h3>Quick Actions</h3>
-                <a href="tasks.php" class="btn">➕ Add Task</a>
+                <a href="tasks.php" class="btn"> Add Task</a>
                 <a href="timer.php" class="btn">▶ Start Timer</a>
             </div>
 
             <!-- Study Streak -->
             <div class="card">
-                <h3>Study Streak 🔥</h3>
+                <h3>Study Streak </h3>
                 <p>5 days in a row</p> <!-- Placeholder -->
             </div>
         </div>
@@ -134,11 +140,8 @@
     </div>
 </div>
 
-<!--yo footer ko-->
-  <footer>
-    <h2>StudyNote</h2>
-    <p>&copy; 2025 StudyNote. All rights reserved.</p>
-  </footer>
+</body>
+</html>
 <!-- JS connection -->
 <script src="../public/js/script.js"></script>
 <script>
