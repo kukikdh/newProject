@@ -9,6 +9,9 @@
     <!-- Add New Task Card -->
     <div class="card">
       <h2>Add New Task</h2>
+      <?php if (isset($error)): ?>
+        <div class="message error"><?php echo htmlspecialchars($error); ?></div>
+      <?php endif; ?>
       <form method="post" class="task-form">
         <div class="form-group">
           <label for="title">Task Title</label>
@@ -22,7 +25,12 @@
 
         <div class="form-group">
           <label for="due_date">Due Date (optional)</label>
-          <input type="date" id="due_date" name="due_date" value="<?php echo isset($_GET['due_date']) ? htmlspecialchars($_GET['due_date']) : ''; ?>">
+          <input type="date" id="due_date" name="due_date" min="<?php echo date('Y-m-d'); ?>" value="<?php echo isset($_GET['due_date']) ? htmlspecialchars($_GET['due_date']) : ''; ?>">
+        </div>
+
+        <div class="form-group">
+          <label for="reminder_time">Reminder Time (optional)</label>
+          <input type="datetime-local" id="reminder_time" name="reminder_time" min="<?php echo date('Y-m-d\TH:i'); ?>">
         </div>
 
         <button type="submit" name="add_task" class="btn primary-btn">Add Task</button>
@@ -41,9 +49,23 @@
           $title = trim($_POST['title']);
           $description = trim($_POST['description']);
           $due_date = $_POST['due_date'] ?: null;
-          $stmt = $pdo->prepare("INSERT INTO tasks (user_id, title, description, due_date) VALUES (?, ?, ?, ?)");
-          $stmt->execute([$user_id, $title, $description, $due_date]);
-          header('Location: tasks.php');
+          $reminder_time = $_POST['reminder_time'] ?: null;
+
+          // Validate due date is not in the past
+          if ($due_date && $due_date < date('Y-m-d')) {
+            $error = "Due date cannot be in the past.";
+          } elseif ($reminder_time && strtotime($reminder_time) <= time()) {
+            $error = "Reminder time must be in the future.";
+          } else {
+            $stmt = $pdo->prepare("INSERT INTO tasks (user_id, title, description, due_date) VALUES (?, ?, ?, ?)");
+            $stmt->execute([$user_id, $title, $description, $due_date]);
+            $task_id = $pdo->lastInsertId();
+            if ($reminder_time) {
+              $stmt = $pdo->prepare("INSERT INTO reminders (task_id, reminder_time) VALUES (?, ?)");
+              $stmt->execute([$task_id, $reminder_time]);
+            }
+            header('Location: tasks.php');
+          }
         }
 
         if (isset($_GET['complete'])) {

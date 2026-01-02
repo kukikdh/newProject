@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../public/css/base.css" />
 </head>
 <body>
+<?php if(isset($_GET['message']) && $_GET['message'] == 'logout_success') { echo "<script>alert('Logout successful!');</script>"; } ?>
 <!-- first hearder ko part-->
   <header>
-    <h1>StudyNote</h1>
+    <h1>StudyMate</h1>
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>

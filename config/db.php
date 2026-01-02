@@ -1,4 +1,8 @@
 <?php
+if (!defined("BASE_URL")) {
+    define("BASE_URL", "/newProject");
+}
+
 $host = 'localhost';
 $dbname = 'productivity_tracker';
 $username = 'root';

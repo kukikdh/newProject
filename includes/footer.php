@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="home.css">
-</head>
-<body>  
-<!--yo footer ko-->
+<!-- Footer -->
 <footer>
- <h2>StudyNote</h2>
- <p>&copy; 2025 StudyNote. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-<?php
-
-?>
+    <h2>StudyNote</h2>
+    <p>&copy; 2025 StudyNote. All rights reserved.</p>
+</footer>

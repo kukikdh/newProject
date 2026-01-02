@@ -47,10 +47,32 @@ button[type="submit"]:hover {
   background-color: var(--color-primary-dark);
 }
 
+.primary-btn {
+  background-color: var(--color-primary);
+  color: var(--color-bg-light);
+  border: none;
+}
+
+.primary-btn:hover {
+  background-color: var(--color-primary-dark);
+}
+
 /* Forms */
 form {
   max-width: 400px;
   margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+  margin-bottom: var(--spacing-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
 }
 
 input, textarea, select {
@@ -127,9 +149,8 @@ a:hover {
 .auth-content {
   padding: var(--spacing-xxl) var(--spacing-lg);
   max-width: 400px;
-  margin: 0 auto;
+  width: 100%;
   background-color: var(--color-bg-light);
-  min-height: 100vh;
   border-radius: var(--border-radius-xl);
   box-shadow: var(--shadow-md);
 }
@@ -195,4 +216,12 @@ label {
   .auth-content {
     padding: var(--spacing-lg) var(--spacing-md);
   }
+}
+
+/* Center auth content */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
